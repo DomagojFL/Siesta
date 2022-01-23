@@ -54,19 +54,24 @@
           <div class="mt-32 sm:mt-10 flex flex-row justify-between w-full">
             <div>
               <a href="tel:091 304 5555">
-                <img
+                <svg
                   class="
-                    w-14
+                    w-12
                     scale-100
                     transform
                     hover:scale-110
                     transition-all
                     ease-in-out
                     duration-200
+                    text-yellow-400
                   "
-                  src="/Dostava.png"
-                  alt="Dostava"
-                />
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                  />
+                </svg>
               </a>
             </div>
             <div>

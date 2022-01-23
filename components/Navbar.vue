@@ -50,7 +50,7 @@
         </div>
         <div class="hidden sm:flex sm:flex-row space-x-4">
           <div>
-            <a href="#">
+            <a href="https://www.instagram.com/grill_bar_siesta/?hl=hr">
               <img
                 class="w-8 text-white"
                 src="/instagram.svg"
@@ -59,7 +59,7 @@
             </a>
           </div>
           <div>
-            <a href="#">
+            <a href="https://www.facebook.com/Grillbar-Siesta-177464942921067/">
               <img
                 class="w-8 text-white fill-current"
                 src="/facebook.svg"
@@ -98,7 +98,7 @@
       </div>
       <div class="flex flex-row space-x-12">
         <div>
-          <a href="#">
+          <a href="https://www.instagram.com/grill_bar_siesta/?hl=hr">
             <img
               class="w-10 h-10 text-white"
               src="/instagram.svg"
@@ -107,7 +107,7 @@
           </a>
         </div>
         <div>
-          <a href="#">
+          <a href="https://www.facebook.com/Grillbar-Siesta-177464942921067/">
             <img
               class="w-10 h-10 text-white fill-current"
               src="/facebook.svg"
