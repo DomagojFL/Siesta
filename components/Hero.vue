@@ -1,11 +1,23 @@
 <template>
   <div class="hero">
-    <div class="w-full h-screen relative">
-      <img
+    <div class="w-full h-screen relative overflow-hidden">
+      <video
+        autoplay
+        loop
+        muted
+        class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
+      >
+        <source
+          src="https://assets.mixkit.co/videos/download/mixkit-adding-spices-to-barbecue-meat-in-the-grill-30824-medium.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <!-- <img
         class="absolute w-full h-screen object-cover"
         src="/hero.jpg"
         alt="Hero"
-      />
+      /> -->
       <div
         class="
           absolute
@@ -21,8 +33,8 @@
       >
         <div class="flex flex-col items-center justify-center absolute top-60">
           <div class="flex flex-col text-center">
-            <div class="text-4xl font-bold">Grill & Bar Siesta</div>
-            <p class="py-4">Najbolja hrana i piće u Crnoj Punti!</p>
+            <div class="text-4xl sm:text-6xl font-bold">Grill & Bar Siesta</div>
+            <p class="py-4 sm:text-2xl">Najbolja hrana i piće u Crnoj Punti!</p>
           </div>
           <div class="mt-10">
             <svg
@@ -39,7 +51,7 @@
               />
             </svg>
           </div>
-          <div class="mt-32 flex flex-row justify-between w-full">
+          <div class="mt-32 sm:mt-10 flex flex-row justify-between w-full">
             <div>
               <a href="tel:091 304 5555">
                 <img

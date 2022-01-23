@@ -4,6 +4,8 @@
     <Hero />
     <Menu />
     <Events />
+    <Gallery />
+    <FindUs />
     <Footer />
     <transition name="fade">
       <div
@@ -40,6 +42,7 @@
       <div
         id="pagetop"
         class="
+          sm:hidden
           fixed
           left-0
           bottom-0
@@ -68,6 +71,7 @@
 </template>
 
 <script>
+import Gallery from "~/components/Gallery.vue";
 export default {
   data() {
     return {
@@ -94,5 +98,6 @@ export default {
       });
     },
   },
+  components: { Gallery },
 };
 </script>

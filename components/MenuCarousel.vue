@@ -244,7 +244,9 @@
               alt="Menu Slika"
             />
             <div class="flex flex-col gap-4">
-              <div class="text-xl font-bold text-center py-2 sm:py-4">
+              <div
+                class="text-xl font-bold text-center border-b-2 py-2 sm:py-4"
+              >
                 Deserti
               </div>
               <div class="flex flex-row">

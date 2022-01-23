@@ -1,7 +1,7 @@
 <template>
   <div id="menu" class="h-full w-full text-center">
     <div class="mt-10">
-      <div class="text-3xl py-8">Menu</div>
+      <div class="text-3xl font-bold py-8">Menu</div>
       <MenuCarousel />
     </div>
   </div>

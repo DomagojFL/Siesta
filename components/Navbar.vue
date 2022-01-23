@@ -11,14 +11,15 @@
         items-center
         justify-between
         px-4
+        sm:px-12 sm:py-8
         py-4
         z-40
       "
     >
       <div>
-        <img class="w-12 h-12" src="/logo.png" alt="Logo" />
+        <img class="w-12 sm:w-16" src="/logo.png" alt="Logo" />
       </div>
-      <!--Mobile navbar -->
+      <!--Mobile navbar toggle -->
       <div>
         <button
           class="flex items-center justify-center sm:hidden"
@@ -40,10 +41,33 @@
         </button>
       </div>
       <!--Desktop navbar -->
-      <div class="hidden sm:flex flex-col sm:flex-row gap-4">
-        <a href="">Početna</a>
-        <a href="">Menu</a>
-        <a href="">Kontakt</a>
+      <div class="hidden sm:flex sm:flex-row">
+        <div class="hidden text-2xl sm:flex sm:flex-row gap-6 mr-6">
+          <a class="link" href="#">Početna</a>
+          <a class="link" href="#menu">Menu</a>
+          <a class="link" href="#events">Događaji</a>
+          <a class="link" href="#find">Kontakt</a>
+        </div>
+        <div class="hidden sm:flex sm:flex-row space-x-4">
+          <div>
+            <a href="#">
+              <img
+                class="w-8 text-white"
+                src="/instagram.svg"
+                alt="Instagram"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img
+                class="w-8 text-white fill-current"
+                src="/facebook.svg"
+                alt="Facebook"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <div
@@ -52,12 +76,17 @@
         absolute
         left-0
         right-0
-        top-10
+        top-16
+        flex flex-col
+        items-center
+        justify-center
         mx-auto
         sm:hidden
         text-2xl
         w-full
-        h-full
+        h-80
+        backdrop-blur-3xl
+        bg-black bg-opacity-60
         z-40
       "
     >
@@ -65,6 +94,27 @@
         <a @click="showNav" class="link" href="#">Početna</a>
         <a @click="showNav" class="link" href="#menu">Menu</a>
         <a @click="showNav" class="link" href="#events">Događaji</a>
+        <a @click="showNav" class="link" href="#find">Kontakt</a>
+      </div>
+      <div class="flex flex-row space-x-12">
+        <div>
+          <a href="#">
+            <img
+              class="w-10 h-10 text-white"
+              src="/instagram.svg"
+              alt="Instagram"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              class="w-10 h-10 text-white fill-current"
+              src="/facebook.svg"
+              alt="Facebook"
+            />
+          </a>
+        </div>
       </div>
     </div>
   </div>

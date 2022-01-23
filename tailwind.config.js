@@ -6,6 +6,9 @@ module.exports = {
         Poppins: ['Poppins', 'sans-serif'],
       },
     extend: {
+            backgroundImage: {        
+              'hero': "url('/hero.jpg')"    
+             }
     },
   },
   variants: {
