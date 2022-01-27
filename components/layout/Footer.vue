@@ -1,6 +1,6 @@
 <template>
   <div class="footer bottom-0 text-sm sm:text-base text-center w-full py-8">
-    <div data-aos="fade-up">Copyright © 2022 All rights reserved.</div>
+    <div>Copyright © 2022 All rights reserved.</div>
   </div>
 </template>
 
