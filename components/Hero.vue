@@ -83,7 +83,7 @@
             </div>
             <div>
               <a href="#menu">
-                <img
+                <nuxt-img
                   data-aos="fade-up"
                   class="
                     w-14

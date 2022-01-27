@@ -5,7 +5,7 @@
         data-aos="fade-up"
         class="menuTitle overflow-hidden text-3xl font-bold py-8"
       >
-        Menu
+        Jelovnik
       </div>
       <MenuCarousel />
     </div>

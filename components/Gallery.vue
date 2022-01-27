@@ -11,7 +11,7 @@
       :autoplay="true"
     >
       <slide v-for="(slide, i) in slides" :index="i" :key="i">
-        <img class="w-full h-full object-cover" :src="slide.src" />
+        <nuxt-img class="w-full h-full object-cover" :src="slide.src" />
       </slide>
     </carousel-3d>
   </div>

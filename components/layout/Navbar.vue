@@ -1,5 +1,5 @@
 <template>
-  <div class="nav relative">
+  <div id="nav" class="nav relative">
     <div
       class="
         absolute
@@ -17,7 +17,7 @@
       "
     >
       <div data-aos="fade-right">
-        <img class="w-12 sm:w-16" src="/logo.png" alt="Logo" />
+        <nuxt-img class="w-12 sm:w-16" src="/logo.png" alt="Logo" />
       </div>
       <!--Mobile navbar toggle -->
       <div data-aos="fade-down">
@@ -63,8 +63,8 @@
       <!--Desktop navbar -->
       <div data-aos="fade-down" class="hidden sm:flex sm:flex-row">
         <div class="hidden text-2xl sm:flex sm:flex-row gap-6 mr-6">
-          <a class="link" href="#">Početna</a>
-          <a class="link" href="#menu">Menu</a>
+          <a class="link" href="#nav">Početna</a>
+          <a class="link" href="#menu">Jelovnik</a>
           <a class="link" href="#events">Događaji</a>
           <a class="link" href="#find">Kontakt</a>
         </div>
@@ -108,9 +108,11 @@
       "
     >
       <div class="px-8 py-6 mt-16 flex flex-col gap-4 text-center">
-        <a @click="showNav" data-aos="fade-up" class="link" href="#">Početna</a>
+        <a @click="showNav" data-aos="fade-up" class="link" href="#nav"
+          >Početna</a
+        >
         <a @click="showNav" data-aos="fade-up" class="link" href="#menu"
-          >Menu</a
+          >Jelovnik</a
         >
         <a @click="showNav" data-aos="fade-up" class="link" href="#events"
           >Događaji</a
@@ -122,7 +124,7 @@
       <div class="flex flex-row space-x-12">
         <div>
           <a href="https://www.instagram.com/grill_bar_siesta/?hl=hr">
-            <img
+            <nuxt-img
               class="w-10 h-10 text-white"
               src="/instagram.svg"
               alt="Instagram"
@@ -131,7 +133,7 @@
         </div>
         <div>
           <a href="https://www.facebook.com/Grillbar-Siesta-177464942921067/">
-            <img
+            <nuxt-img
               class="w-10 h-10 text-white fill-current"
               src="/facebook.svg"
               alt="Facebook"

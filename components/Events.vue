@@ -1,9 +1,9 @@
 <template>
-  <div id="events" class="w-full h-full text-center px-5 py-4 mt-10 sm:mt-0">
+  <div id="events" class="w-full h-full text-center px-5 py-4 mt-10 sm:-mt-10">
     <div data-aos="fade-up" class="text-3xl font-bold py-8">Događaji</div>
     <div class="w-full h-full sm:px-10 flex flex-col sm:flex-row gap-4">
       <div data-aos="fade-up" class="h-1/2 sm:h-full">
-        <img
+        <nuxt-img
           class="w-full h-full object-cover"
           src="/event.jpg"
           alt="Događaji"

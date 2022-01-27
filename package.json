@@ -17,6 +17,7 @@
     "vue-carousel-3d": "^1.0.1"
   },
   "devDependencies": {
+    "@nuxt/image": "^0.6.0",
     "@nuxtjs/tailwindcss": "^4.2.0",
     "nuxt-gsap-module": "^1.6.0",
     "postcss": "^8.3.5"
