@@ -1,7 +1,8 @@
 <template>
   <div>
-    <no-ssr placeholder="Loading...">
+    <client-only placeholder="Loading...">
       <carousel-3d
+        data-aos="fade-up"
         :controls-visible="true"
         :controls-prev-html="'&#10092; '"
         :controls-next-html="'&#10093;'"
@@ -270,7 +271,7 @@
           </div>
         </slide>
       </carousel-3d>
-    </no-ssr>
+    </client-only>
   </div>
 </template>
 

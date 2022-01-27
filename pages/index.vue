@@ -71,7 +71,14 @@
 </template>
 
 <script>
+import Navbar from "~/components/layout/Navbar.vue";
+import Hero from "~/components/Hero.vue";
+import Menu from "~/components/Menu.vue";
+import Events from "~/components/Events.vue";
 import Gallery from "~/components/Gallery.vue";
+import FindUs from "~/components/FindUs.vue";
+import Footer from "~/components/layout/Footer.vue";
+
 export default {
   data() {
     return {
@@ -79,6 +86,7 @@ export default {
       scY: 0,
     };
   },
+
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
   },
@@ -98,6 +106,6 @@ export default {
       });
     },
   },
-  components: { Gallery },
+  components: { Gallery, Navbar, Hero, Menu, Events, FindUs, Footer },
 };
 </script>

@@ -7,17 +7,9 @@
         muted
         class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
       >
-        <source
-          src="https://assets.mixkit.co/videos/download/mixkit-adding-spices-to-barbecue-meat-in-the-grill-30824-medium.mp4"
-          type="video/mp4"
-        />
+        <source src="/grill_Trim.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <!-- <img
-        class="absolute w-full h-screen object-cover"
-        src="/hero.jpg"
-        alt="Hero"
-      /> -->
       <div
         class="
           absolute
@@ -31,13 +23,27 @@
           bg-opacity-70
         "
       >
-        <div class="flex flex-col items-center justify-center absolute top-60">
+        <div
+          class="
+            title
+            flex flex-col
+            items-center
+            justify-center
+            absolute
+            top-60
+          "
+        >
           <div class="flex flex-col text-center">
-            <div class="text-4xl sm:text-6xl font-bold">Grill & Bar Siesta</div>
-            <p class="py-4 sm:text-2xl">Najbolja hrana i piće u Crnoj Punti!</p>
+            <div data-aos="fade-up" class="text-4xl sm:text-6xl font-bold">
+              Grill & Bar Siesta
+            </div>
+            <p data-aos="fade-up" class="py-4 sm:text-2xl">
+              Najbolja hrana i piće u Crnoj Punti!
+            </p>
           </div>
           <div class="mt-10">
             <svg
+              data-aos="fade-up"
               class="h-10 w-10 animate-bounce"
               fill="none"
               viewBox="0 0 24 24"
@@ -55,6 +61,7 @@
             <div>
               <a href="tel:091 304 5555">
                 <svg
+                  data-aos="fade-up"
                   class="
                     w-12
                     scale-100
@@ -77,6 +84,7 @@
             <div>
               <a href="#menu">
                 <img
+                  data-aos="fade-up"
                   class="
                     w-14
                     scale-100

@@ -1,4 +1,5 @@
 export default {
+    ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Grill & Bar Siesta',
@@ -18,20 +19,24 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    "aos/dist/aos.css",
   ],
-
+  vendor: ['aos'],
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~plugins/vue-carousel-3d', ssr: false }
+    { src: '~plugins/vue-carousel-3d', ssr: false },
+    { src: '~plugins/aos', ssr: false },
+    { src: '~plugins/aos', ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: false,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    'nuxt-gsap-module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -44,6 +49,14 @@ export default {
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
+  build: {},
+//GSAP
+  gsap: {
+    /* module options */
+        extraPlugins: {
+      scrollTo: true,
+      scrollTrigger: true
+    }
   }
+
 }

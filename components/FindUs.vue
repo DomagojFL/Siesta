@@ -1,27 +1,33 @@
 <template>
   <div id="find" class="w-full h-full text-center px-5 mt-10 mb-4">
-    <div class="text-3xl font-bold py-8">Kontakt</div>
+    <div data-aos="fade-up" class="text-3xl font-bold py-8">Kontakt</div>
     <div class="flex flex-row">
       <div class="w-full flex flex-col gap-4 py-4">
         <div>
-          <div class="font-bold sm:text-xl">Adresa:</div>
-          <div class="text-sm sm:text-base">
+          <div data-aos="fade-up" class="font-bold sm:text-xl">Adresa:</div>
+          <div data-aos="fade-up" class="text-sm sm:text-base">
             Zagrebačka 41d, Crna Punta, 23450 Obrovac
           </div>
         </div>
         <div>
-          <div class="font-bold sm:text-xl">Radno vrijeme:</div>
-          <div class="text-sm sm:text-base">8:00h - 23:00h</div>
+          <div data-aos="fade-up" class="font-bold sm:text-xl">
+            Radno vrijeme:
+          </div>
+          <div data-aos="fade-up" class="text-sm sm:text-base">
+            8:00h - 23:00h
+          </div>
         </div>
 
         <div>
-          <div class="font-bold sm:text-xl">Telefon:</div>
-          <div class="text-sm sm:text-base">091 305 5555</div>
+          <div data-aos="fade-up" class="font-bold sm:text-xl">Telefon:</div>
+          <div data-aos="fade-up" class="text-sm sm:text-base">
+            091 305 5555
+          </div>
         </div>
       </div>
     </div>
 
-    <div id="map" class="w-full h-96 mb-20"></div>
+    <div data-aos="fade-up" id="map" class="w-full h-96 mb-20"></div>
   </div>
 </template>
 

@@ -1,7 +1,8 @@
 <template>
   <div class="w-full h-full text-center mt-10 mb-4">
-    <div class="text-3xl font-bold py-8">Galerija</div>
+    <div data-aos="fade-up" class="text-3xl font-bold py-8">Galerija</div>
     <carousel-3d
+      data-aos="fade-up"
       :disable3d="true"
       :space="365"
       :clickable="false"
@@ -9,7 +10,7 @@
       :border="0"
       :autoplay="true"
     >
-      <slide v-for="(slide, i) in slides" :index="i" key="i">
+      <slide v-for="(slide, i) in slides" :index="i" :key="i">
         <img class="w-full h-full object-cover" :src="slide.src" />
       </slide>
     </carousel-3d>

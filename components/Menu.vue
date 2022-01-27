@@ -1,7 +1,12 @@
 <template>
   <div id="menu" class="h-full w-full text-center">
     <div class="mt-10">
-      <div class="text-3xl font-bold py-8">Menu</div>
+      <div
+        data-aos="fade-up"
+        class="menuTitle overflow-hidden text-3xl font-bold py-8"
+      >
+        Menu
+      </div>
       <MenuCarousel />
     </div>
   </div>
@@ -9,5 +14,9 @@
 
 <script>
 import MenuCarousel from "./MenuCarousel.vue";
-export default { components: { MenuCarousel } };
+export default {
+  components: {
+    MenuCarousel,
+  },
+};
 </script>
