@@ -2,6 +2,11 @@ export default {
     ssr: false,
     target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
+  loading: {
+    name: 'rotating-plane',
+    color: 'yellow',
+    background: 'red'
+  },
   head: {
     title: 'Grill & Bar Siesta',
     htmlAttrs: {

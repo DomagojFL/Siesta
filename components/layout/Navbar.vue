@@ -21,42 +21,35 @@
       </div>
       <!--Mobile navbar toggle -->
       <div data-aos="fade-down">
-        <button
-          class="flex items-center justify-center sm:hidden"
-          @click="showNav"
-        >
-          <svg class="h-10 w-10" width="324" height="205" viewBox="0 0 324 205">
-            <g id="Menu" transform="translate(-365.5 -212.5)">
-              <path
-                id="Path_35"
-                data-name="Path 35"
-                d="M378,225H677"
-                fill="none"
-                stroke="#fff"
-                stroke-linecap="round"
-                stroke-width="25"
-              />
-              <path
-                id="Path_36"
-                data-name="Path 36"
-                d="M378,225H677"
-                transform="translate(0 90)"
-                fill="none"
-                stroke="#fff"
-                stroke-linecap="round"
-                stroke-width="25"
-              />
-              <path
-                id="Path_37"
-                data-name="Path 37"
-                d="M378,225H677"
-                transform="translate(0 180)"
-                fill="none"
-                stroke="#fff"
-                stroke-linecap="round"
-                stroke-width="25"
-              />
-            </g>
+        <button v-show="!visible" class="sm:hidden" @click="showNav">
+          <svg
+            class="h-10 w-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <button v-show="visible" class="sm:hidden" @click="showNav">
+          <svg
+            class="h-10 w-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
           </svg>
         </button>
       </div>
@@ -103,7 +96,7 @@
         text-2xl
         w-2/3
         h-screen
-        bg-black bg-opacity-70
+        bg-black bg-opacity-80
         z-30
       "
     >

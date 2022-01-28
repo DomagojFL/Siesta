@@ -7,7 +7,7 @@
         muted
         class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
       >
-        <source src="/grill_Trim.mp4" type="video/mp4" />
+        <source src="/Hero.m4v" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div
@@ -58,10 +58,9 @@
             </svg>
           </div>
           <div class="mt-32 sm:mt-10 flex flex-row justify-between w-full">
-            <div>
+            <div data-aos="fade-up">
               <a href="tel:091 304 5555">
                 <svg
-                  data-aos="fade-up"
                   class="
                     w-12
                     scale-100
@@ -81,22 +80,28 @@
                 </svg>
               </a>
             </div>
-            <div>
-              <a href="#menu">
-                <nuxt-img
-                  data-aos="fade-up"
+            <div data-aos="fade-up">
+              <a href="https://goo.gl/maps/9iZmcWbRpbWWygvE6">
+                <svg
                   class="
-                    w-14
+                    w-12
                     scale-100
                     transform
                     hover:scale-110
                     transition-all
                     ease-in-out
                     duration-200
+                    text-yellow-400
                   "
-                  src="/food-menu.jpg"
-                  alt="Menu"
-                />
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
               </a>
             </div>
           </div>
