@@ -27,37 +27,14 @@
       </div>
     </div>
 
-    <div data-aos="fade-up" id="map" class="w-full h-96 mb-20"></div>
+    <div data-aos="fade-up" class="w-full h-96 mb-20">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2862.1803635602973!2d15.607127215661976!3d44.162141927388745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4761c1467f021061%3A0x79f6bd9b5455cf9d!2sGrill%26bar%20Siesta!5e0!3m2!1shr!2shr!4v1643386966706!5m2!1shr!2shr"
+        class="w-full h-full"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
   </div>
 </template>
-
-<script>
-import mapboxgl from "mapbox-gl";
-
-export default {
-  data() {
-    return {
-      access_token:
-        "pk.eyJ1IjoiZG9tYWdvajEyMyIsImEiOiJja3lyNzdvdGUwcjVxMnZvM3JhemRzZHI2In0.QUo89Uz8oHllrunRGROz2g",
-      map: {},
-    };
-  },
-  mounted() {
-    this.createMap();
-  },
-  methods: {
-    createMap() {
-      mapboxgl.accessToken = this.access_token;
-      this.map = new mapboxgl.Map({
-        container: "map",
-        style: "mapbox://styles/domagoj123/ckyr7aa7h3emo15qroiu0cuqc",
-        zoom: 16,
-        center: [15.609382, 44.162124],
-      });
-    },
-  },
-};
-</script>
-
-<style>
-</style>
