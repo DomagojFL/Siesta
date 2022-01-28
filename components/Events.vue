@@ -14,10 +14,10 @@
           Organiziraj svoj događaj
         </div>
         <div data-aos="fade-up" data-aos-delay="50">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quia
-          earum eius cumque. Excepturi commodi voluptates, quibusdam quia
-          repellat laudantium quasi temporibus, molestiae, officiis autem
-          provident tempore illum odit blanditiis.
+          Organizirate svoj događaj s nama, bilo to da želite proslaviti
+          rođendan vašeg mališana ili se želite zabaviti sa svojim društvom
+          uvijek smo tu za vas te smo tu da se vi ne trebate brinuti za vaše
+          goste već smo tu mi.
         </div>
         <button
           data-aos="fade-up"
