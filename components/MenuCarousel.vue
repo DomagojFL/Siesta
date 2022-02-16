@@ -16,7 +16,7 @@
         <!--Hladna Predjela-->
         <slide :index="0">
           <div class="bg-black w-full h-full">
-            <nuxt-img class="w-full h-1/3" :src="imgUrl0" alt="Menu Slika" />
+            <img class="w-full h-1/3" :src="imgUrl0" alt="Menu Slika" />
             <div class="flex flex-col gap-4">
               <div
                 class="text-xl font-bold text-center py-4 sm:py-4 border-b-2"
@@ -44,7 +44,7 @@
         <!--Topla Predjela-->
         <slide :index="1">
           <div class="bg-black w-full h-full">
-            <nuxt-img class="w-full h-1/3" :src="imgUrl1" alt="Menu Slika" />
+            <img class="w-full h-1/3" :src="imgUrl1" alt="Menu Slika" />
             <div class="flex flex-col gap-4">
               <div
                 class="text-xl font-bold text-center border-b-2 py-2 sm:py-4"
@@ -74,7 +74,7 @@
         <!--Pizza-->
         <slide :index="2">
           <div class="bg-black w-full h-full">
-            <nuxt-img class="w-full h-1/3" :src="imgUrl2" alt="Menu Slika" />
+            <img class="w-full h-1/3" :src="imgUrl2" alt="Menu Slika" />
             <div class="flex flex-col gap-4">
               <div
                 class="text-xl font-bold text-center border-b-2 py-2 sm:py-4"
@@ -103,7 +103,7 @@
         <!--Mesna jela-->
         <slide :index="3">
           <div class="bg-black w-full h-full">
-            <nuxt-img class="w-full h-1/3" :src="imgUrl3" alt="Menu Slika" />
+            <img class="w-full h-1/3" :src="imgUrl3" alt="Menu Slika" />
             <div class="flex flex-col gap-4">
               <div
                 class="text-xl font-bold text-center border-b-2 py-2 sm:py-4"
@@ -126,7 +126,7 @@
         </slide>
         <slide :index="4">
           <div class="bg-black w-full h-full">
-            <nuxt-img class="w-full h-1/3" :src="imgUrl4" alt="Menu Slika" />
+            <img class="w-full h-1/3" :src="imgUrl4" alt="Menu Slika" />
             <div class="flex flex-col gap-4">
               <div
                 class="text-xl font-bold text-center border-b-2 py-2 sm:py-4"
@@ -158,7 +158,7 @@
         <!--Riblja jela-->
         <slide :index="5">
           <div class="bg-black w-full h-full">
-            <nuxt-img class="w-full h-1/3" :src="imgUrl5" alt="Menu Slika" />
+            <img class="w-full h-1/3" :src="imgUrl5" alt="Menu Slika" />
             <div class="flex flex-col gap-4">
               <div
                 class="text-xl font-bold text-center border-b-2 py-2 sm:py-4"
@@ -185,7 +185,7 @@
         <!--Pašte i rižoti-->
         <slide :index="6">
           <div class="bg-black w-full h-full">
-            <nuxt-img class="w-full h-1/3" :src="imgUrl6" alt="Menu Slika" />
+            <img class="w-full h-1/3" :src="imgUrl6" alt="Menu Slika" />
             <div class="flex flex-col gap-4">
               <div
                 class="text-xl font-bold text-center border-b-2 py-2 sm:py-4"
@@ -208,7 +208,7 @@
         <!--Sendviči-->
         <slide :index="7">
           <div class="bg-black w-full h-full">
-            <nuxt-img class="w-full h-1/3" :src="imgUrl7" alt="Menu Slika" />
+            <img class="w-full h-1/3" :src="imgUrl7" alt="Menu Slika" />
             <div class="flex flex-col gap-4">
               <div
                 class="text-xl font-bold text-center border-b-2 py-2 sm:py-4"
@@ -239,7 +239,7 @@
         <!--Deserti-->
         <slide :index="8">
           <div class="bg-black w-full h-full">
-            <nuxt-img
+            <img
               class="w-full h-1/3 bg-gradient-to-t from-black to-transparent"
               :src="imgUrl8"
               alt="Menu Slika"

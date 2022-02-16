@@ -18,7 +18,7 @@
       :class="{ 'bg-black bg-opacity-60': !showNavBackground }"
     >
       <div data-aos="fade-right">
-        <nuxt-img class="w-12 sm:w-16" src="/logo.png" alt="Logo" />
+        <img class="w-12 sm:w-16" src="/logo.png" alt="Logo" />
       </div>
       <!--Mobile navbar toggle -->
       <div data-aos="fade-down">
@@ -118,7 +118,7 @@
       <div class="flex flex-row space-x-12">
         <div>
           <a href="https://www.instagram.com/grill_bar_siesta/?hl=hr">
-            <nuxt-img
+            <img
               class="w-10 h-10 text-white"
               src="/instagram.svg"
               alt="Instagram"
@@ -127,7 +127,7 @@
         </div>
         <div>
           <a href="https://www.facebook.com/Grillbar-Siesta-177464942921067/">
-            <nuxt-img
+            <img
               class="w-10 h-10 text-white fill-current"
               src="/facebook.svg"
               alt="Facebook"
