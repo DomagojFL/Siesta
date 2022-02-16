@@ -5,7 +5,7 @@
       <div data-aos="fade-up" class="h-1/2 sm:h-full">
         <nuxt-img
           class="w-full h-full object-cover"
-          src="/event.jpg"
+          src="~/assets/img/event.jpg"
           alt="Događaji"
         />
       </div>
@@ -14,10 +14,22 @@
           Organiziraj svoj događaj
         </div>
         <div data-aos="fade-up" data-aos-delay="50">
-          Organizirate svoj događaj s nama, bilo to da želite proslaviti
-          rođendan vašeg mališana ili se želite zabaviti sa svojim društvom
-          uvijek smo tu za vas te smo tu da se vi ne trebate brinuti za vaše
-          goste već smo tu mi.
+          <p>
+            Možemo organizirati vjenčanja, djevojačke večeri, rođendane, dječje
+            rođendane. Svaki event i događaj možemo pretvoriti u bajku i
+            usrećiti sve one koji sudjeluju u njemu. Naša najveća prednost je
+            što smo na predivnom mjestu koje pruža prekrasan pogled na Velebit i
+            prelijepi pogled na more. Manje od sata vremena od Zadra i više od
+            15 minuta od predivne rijeke Zrmanje . Od jutarnjih kava uz pogled
+            na more do posebnih ljetnih večeri uz miris mora i fine hrane u
+            restoranu Grill & Bar Siesta.
+          </p>
+          <p>
+            Zabava zagarantirana, javite nam se s punim povjerenjem i posjetite
+            nas da se dogovorimo o detaljima vaše najveće i najbolje zabave u
+            životu.
+          </p>
+          <p>Vaš Grill & Bar Siesta tim</p>
         </div>
         <button
           data-aos="fade-up"

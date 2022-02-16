@@ -15,6 +15,7 @@
         py-4
         z-40
       "
+      :class="{ 'bg-black bg-opacity-60': !showNavBackground }"
     >
       <div data-aos="fade-right">
         <nuxt-img class="w-12 sm:w-16" src="/logo.png" alt="Logo" />
@@ -142,10 +143,22 @@
 export default {
   data: () => ({
     visible: false,
+    showNavBackground: false,
   }),
   methods: {
     showNav() {
       this.visible = !this.visible;
+    },
+    showBg() {
+      document.addEventListener("scroll", function () {
+        let bodyTopPosition = document.body.getBoundingClientRect().top;
+
+        if (bodyTopPosition < -120) {
+          showNavBackground = true;
+        } else {
+          showNavBackground = false;
+        }
+      });
     },
   },
 };
