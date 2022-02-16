@@ -16,7 +16,11 @@
         <!--Hladna Predjela-->
         <slide :index="0">
           <div class="bg-black w-full h-full">
-            <img class="w-full h-1/3" :src="imgUrl0" alt="Menu Slika" />
+            <img
+              class="w-full h-1/3 object-cover"
+              src="~/assets/img/cold-appetizers-menu.jpg"
+              alt="Menu Slika"
+            />
             <div class="flex flex-col gap-4">
               <div
                 class="text-xl font-bold text-center py-4 sm:py-4 border-b-2"
@@ -44,7 +48,11 @@
         <!--Topla Predjela-->
         <slide :index="1">
           <div class="bg-black w-full h-full">
-            <img class="w-full h-1/3" :src="imgUrl1" alt="Menu Slika" />
+            <img
+              class="w-full h-1/3 object-cover"
+              src="~/assets/img/warm-appetizers-menu.jpg"
+              alt="Menu Slika"
+            />
             <div class="flex flex-col gap-4">
               <div
                 class="text-xl font-bold text-center border-b-2 py-2 sm:py-4"
@@ -74,7 +82,11 @@
         <!--Pizza-->
         <slide :index="2">
           <div class="bg-black w-full h-full">
-            <img class="w-full h-1/3" :src="imgUrl2" alt="Menu Slika" />
+            <img
+              class="w-full h-1/3 object-cover"
+              src="~/assets/img/pizza-menu.jpg"
+              alt="Menu Slika"
+            />
             <div class="flex flex-col gap-4">
               <div
                 class="text-xl font-bold text-center border-b-2 py-2 sm:py-4"
@@ -103,7 +115,11 @@
         <!--Mesna jela-->
         <slide :index="3">
           <div class="bg-black w-full h-full">
-            <img class="w-full h-1/3" :src="imgUrl3" alt="Menu Slika" />
+            <img
+              class="w-full h-1/3 object-cover"
+              src="~/assets/img/meat-menu.jpg"
+              alt="Menu Slika"
+            />
             <div class="flex flex-col gap-4">
               <div
                 class="text-xl font-bold text-center border-b-2 py-2 sm:py-4"
@@ -126,7 +142,11 @@
         </slide>
         <slide :index="4">
           <div class="bg-black w-full h-full">
-            <img class="w-full h-1/3" :src="imgUrl4" alt="Menu Slika" />
+            <img
+              class="w-full h-1/3 object-cover"
+              src="~/assets/img/meat-menu.jpg"
+              alt="Menu Slika"
+            />
             <div class="flex flex-col gap-4">
               <div
                 class="text-xl font-bold text-center border-b-2 py-2 sm:py-4"
@@ -158,7 +178,11 @@
         <!--Riblja jela-->
         <slide :index="5">
           <div class="bg-black w-full h-full">
-            <img class="w-full h-1/3" :src="imgUrl5" alt="Menu Slika" />
+            <img
+              class="w-full h-1/3 object-cover"
+              src="~/assets/img/fish-menu.jpg"
+              alt="Menu Slika"
+            />
             <div class="flex flex-col gap-4">
               <div
                 class="text-xl font-bold text-center border-b-2 py-2 sm:py-4"
@@ -185,7 +209,11 @@
         <!--Pašte i rižoti-->
         <slide :index="6">
           <div class="bg-black w-full h-full">
-            <img class="w-full h-1/3" :src="imgUrl6" alt="Menu Slika" />
+            <img
+              class="w-full h-1/3 object-cover"
+              src="~/assets/img/pasta_and_rice-menu.jpg"
+              alt="Menu Slika"
+            />
             <div class="flex flex-col gap-4">
               <div
                 class="text-xl font-bold text-center border-b-2 py-2 sm:py-4"
@@ -208,7 +236,11 @@
         <!--Sendviči-->
         <slide :index="7">
           <div class="bg-black w-full h-full">
-            <img class="w-full h-1/3" :src="imgUrl7" alt="Menu Slika" />
+            <img
+              class="w-full h-1/3 object-cover"
+              src="~/assets/img/sandvich-menu.jpg"
+              alt="Menu Slika"
+            />
             <div class="flex flex-col gap-4">
               <div
                 class="text-xl font-bold text-center border-b-2 py-2 sm:py-4"
@@ -240,8 +272,8 @@
         <slide :index="8">
           <div class="bg-black w-full h-full">
             <img
-              class="w-full h-1/3 bg-gradient-to-t from-black to-transparent"
-              :src="imgUrl8"
+              class="w-full h-1/3 object-cover"
+              src="~/assets/img/desert-menu.jpg"
               alt="Menu Slika"
             />
             <div class="flex flex-col gap-4">
@@ -280,15 +312,15 @@ import MenuItem from "./MenuItem.vue";
 export default {
   data() {
     return {
-      imgUrl0: "/cold-appetizers-menu.jpg",
-      imgUrl1: "/warm-appetizers-menu.jpg",
-      imgUrl2: "/pizza-menu.jpg",
-      imgUrl3: "/meat-menu.jpg",
-      imgUrl4: "/meat-menu.jpg",
-      imgUrl5: "/fish-menu.jpg",
-      imgUrl6: "/pasta_and_rice-menu.jpg",
-      imgUrl7: "/sandvich-menu.jpg",
-      imgUrl8: "/desert-menu.jpg",
+      imgUrl_1: "~/assets/img/cold-appetizers-menu.jpg",
+      imgUrl_2: "~/assets/img/warm-appetizers-menu.jpg",
+      imgUrl_3: "~/assets/img/pizza-menu.jpg",
+      imgUrl_4: "~/assets/img/meat-menu.jpg",
+      imgUrl_5: "~/assets/img/meat-menu.jpg",
+      imgUrl_6: "~/assets/img/fish-menu.jpg",
+      imgUrl_7: "~/assets/img/pasta_and_rice-menu.jpg",
+      imgUrl_8: "~/assets/img/sandvich-menu.jpg",
+      imgUrl_9: "~/assets/img/desert-menu.jpg",
     };
   },
   components: { MenuItem },

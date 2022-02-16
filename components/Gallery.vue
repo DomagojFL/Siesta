@@ -6,7 +6,6 @@
       :disable3d="true"
       :space="365"
       :clickable="false"
-      :controls-visible="true"
       :border="0"
       :autoplay="true"
     >

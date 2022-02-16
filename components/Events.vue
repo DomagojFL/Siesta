@@ -9,12 +9,12 @@
           alt="Događaji"
         />
       </div>
-      <div class="h-1/2 sm:h-full py-4 flex flex-col items-center">
+      <div class="h-1/2 sm:h-full py-4 sm:px-6 flex flex-col items-center">
         <div data-aos="fade-up" class="py-4 sm:py-6 text-xl font-bold">
           Organiziraj svoj događaj
         </div>
         <div data-aos="fade-up" data-aos-delay="50">
-          <p>
+          <p class="sm:px-6">
             Možemo organizirati vjenčanja, djevojačke večeri, rođendane, dječje
             rođendane. Svaki event i događaj možemo pretvoriti u bajku i
             usrećiti sve one koji sudjeluju u njemu. Naša najveća prednost je
@@ -24,12 +24,12 @@
             na more do posebnih ljetnih večeri uz miris mora i fine hrane u
             restoranu Grill & Bar Siesta.
           </p>
-          <p>
+          <p class="sm:py-3 sm:px-6">
             Zabava zagarantirana, javite nam se s punim povjerenjem i posjetite
             nas da se dogovorimo o detaljima vaše najveće i najbolje zabave u
             životu.
           </p>
-          <p>Vaš Grill & Bar Siesta tim</p>
+          <p class="sm:py-3 sm:px-6">Vaš Grill & Bar Siesta tim</p>
         </div>
         <button
           data-aos="fade-up"
