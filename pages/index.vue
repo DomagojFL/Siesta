@@ -175,9 +175,7 @@
               px-4
               rounded-xl
               focus:outline-none
-              font-bold
-            "
-          >
+              font-bold">
             Organiziraj
           </button>
           </a>
