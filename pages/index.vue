@@ -157,8 +157,8 @@
             </p>
             <p class="sm:py-3 sm:px-6">Vaš Grill & Bar Siesta tim</p>
           </div>
-          <a href="href="tel:091 304 5555"">          
-            <button
+          <a href="href="tel:091 304 5555"">
+          <button
             data-aos="fade-up"
             data-aos-delay="50"
             class="
@@ -179,8 +179,8 @@
             "
           >
             Organiziraj
-          </button></a>
-
+          </button>
+          </a>
         </div>
       </div>
     </div>
