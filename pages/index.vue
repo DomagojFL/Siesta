@@ -157,27 +157,29 @@
             </p>
             <p class="sm:py-3 sm:px-6">Vaš Grill & Bar Siesta tim</p>
           </div>
-          <a href"tel:091 304 5555">
-          <button
-            data-aos="fade-up"
-            data-aos-delay="50"
-            class="
-              mt-4
-              bg-yellow-400
-              text-black
-              transform
-              scale-100
-              hover:scale-110
-              transition-all
-              duration-200
-              ease-in-out
-              py-4
-              px-4
-              rounded-xl
-              focus:outline-none
-              font-bold">
-            Organiziraj
-          </button>
+          <a href="tel:091 304 5555">
+            <button
+              data-aos="fade-up"
+              data-aos-delay="50"
+              class="
+                mt-4
+                bg-yellow-400
+                text-black
+                transform
+                scale-100
+                hover:scale-110
+                transition-all
+                duration-200
+                ease-in-out
+                py-4
+                px-4
+                rounded-xl
+                focus:outline-none
+                font-bold
+              "
+            >
+              Organiziraj
+            </button>
           </a>
         </div>
       </div>

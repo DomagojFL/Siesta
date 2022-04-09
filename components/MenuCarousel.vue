@@ -1,45 +1,6 @@
 <template>
   <div>
     <client-only placeholder="Loading...">
-      <!-- <carousel-3d
-        data-aos="fade-up"
-        :controls-visible="true"
-        :controls-prev-html="'&#10092; '"
-        :controls-next-html="'&#10093;'"
-        :controls-width="15"
-        :controls-height="60"
-        :clickable="false"
-        :border="0"
-        :width="600"
-        :height="860"
-      >
-        <slide @click="test" v-for="(slide, i) in slides" :index="i" :key="i">
-          <template slot-scope="{ index, isCurrent, leftIndex, rightIndex }">
-            <div class="bg-black w-full h-full">
-              <img
-                class="w-full h-1/3 object-cover"
-                :src="require(`~/assets/img${slide.src}`)"
-                alt="Menu Slika"
-              />
-              <div class="flex flex-col gap-4">
-                <div
-                  class="text-xl font-bold text-center py-4 sm:py-4 border-b-2"
-                >
-                  {{ slide.title }}
-                </div>
-                <div class="flex flex-row">
-                  <div class="px-8 flex flex-col gap-2 w-full">
-                    <div class="flex flex-row justify-between w-full">
-                      <div class="font-bold"></div>
-                      <div class="text-sm sm:text-base"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </template>
-        </slide>
-      </carousel-3d> -->
       <carousel-3d
         data-aos="fade-up"
         :controls-visible="true"
