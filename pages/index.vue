@@ -43,7 +43,7 @@
                 Najbolja hrana i piće u Crnoj Punti!
               </p>
             </div>
-            <div class="mt-10">
+            <div class="mt-20">
               <svg
                 data-aos="fade-up"
                 class="h-10 w-10 animate-bounce"
@@ -112,7 +112,7 @@
       </div>
     </div>
     <div id="menu" class="h-full w-full text-center">
-      <div class="mt-10">
+      <div class="mt-20">
         <div
           data-aos="fade-up"
           class="menuTitle overflow-hidden text-3xl font-bold py-8"
@@ -185,7 +185,7 @@
       </div>
     </div>
     <Gallery />
-    <div id="find" class="w-full h-full text-center px-5 mt-10 mb-4">
+    <div id="find" class="w-full h-full text-center px-5 mt-20 mb-4">
       <div data-aos="fade-up" class="text-3xl font-bold py-8">Kontakt</div>
       <div class="flex flex-row">
         <div class="w-full flex flex-col gap-4 py-4">
