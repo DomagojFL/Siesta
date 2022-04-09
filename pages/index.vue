@@ -111,21 +111,16 @@
         </div>
       </div>
     </div>
-    <div id="menu" class="h-full w-full text-center">
-      <div class="mt-20">
-        <div
-          data-aos="fade-up"
-          class="menuTitle overflow-hidden text-3xl font-bold py-8"
-        >
-          Jelovnik
-        </div>
-        <MenuCarousel />
+    <div id="menu" class="h-full w-full mt-10 text-center">
+      <div
+        data-aos="fade-up"
+        class="menuTitle overflow-hidden text-3xl font-bold py-8"
+      >
+        Jelovnik
       </div>
+      <MenuCarousel />
     </div>
-    <div
-      id="events"
-      class="w-full h-full text-center px-5 py-4 mt-10 sm:-mt-10"
-    >
+    <div id="events" class="w-full h-full text-center px-5 py-4 -mt-10">
       <div data-aos="fade-up" class="text-3xl font-bold py-8">Događaji</div>
       <div class="w-full h-full sm:px-10 flex flex-col sm:flex-row gap-4">
         <div data-aos="fade-up" class="h-1/2 sm:h-full">
@@ -185,8 +180,8 @@
       </div>
     </div>
     <Gallery />
-    <div id="find" class="w-full h-full text-center px-5 mt-20 mb-4">
-      <div data-aos="fade-up" class="text-3xl font-bold py-8">Kontakt</div>
+    <div id="find" class="w-full h-full text-center px-5 mt-10 mb-4">
+      <div data-aos="fade-up" class="text-3xl font-bold py-8">Informacije</div>
       <div class="flex flex-row">
         <div class="w-full flex flex-col gap-4 py-4">
           <div>

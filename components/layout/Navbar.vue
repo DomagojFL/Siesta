@@ -59,7 +59,7 @@
           <a class="link" href="#nav">Početna</a>
           <a class="link" href="#menu">Jelovnik</a>
           <a class="link" href="#events">Događaji</a>
-          <a class="link" href="#find">Kontakt</a>
+          <a class="link" href="#find">Informacije</a>
         </div>
         <div class="hidden sm:flex sm:flex-row space-x-4">
           <div>
