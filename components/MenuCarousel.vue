@@ -11,12 +11,12 @@
         :clickable="false"
         :border="0"
         :width="600"
-        :height="840"
+        :height="800"
       >
         <slide v-for="(slide, i) in slide" :index="i" :key="i">
           <template slot-scope="{ index, isCurrent, leftIndex, rightIndex }">
             <div class="bg-black w-full h-full">
-              <div class="relative h-1/5 w-full">
+              <div class="relative h-1/3 w-full">
                 <div
                   class="
                     absolute
