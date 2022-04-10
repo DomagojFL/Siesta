@@ -11,7 +11,7 @@
         :clickable="false"
         :border="0"
         :width="600"
-        :height="800"
+        :height="820"
       >
         <slide v-for="(slide, i) in slide" :index="i" :key="i">
           <template slot-scope="{ index, isCurrent, leftIndex, rightIndex }">
