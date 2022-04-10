@@ -54,7 +54,7 @@
                 <div class="flex flex-col w-full">
                   <div class="flex flex-col">
                     <div
-                      class="text-xs sm:text-base font-bold flex-col"
+                      class="text-xs sm:text-base font-bold flex-col pb-2"
                       v-for="name in slide.items"
                     >
                       {{ name.item }}
@@ -63,21 +63,24 @@
                 </div>
                 <div class="flex flex-row">
                   <div class="flex flex-col px-2">
-                    <div class="text-xs sm:text-base" v-for="kg in slide.kg">
+                    <div
+                      class="text-xs sm:text-base pb-2"
+                      v-for="kg in slide.kg"
+                    >
                       {{ kg.kg }}
                     </div>
                   </div>
                   <div class="flex flex-col">
                     <div
-                      class="text-xs sm:text-base"
+                      class="text-xs sm:text-base pb-2"
                       v-for="price in slide.priceHR"
                     >
                       {{ price.price }}Kn
                     </div>
                   </div>
-                  <div class="flex flex-col px-2">
+                  <div class="flex flex-col pl-2">
                     <div
-                      class="text-xs sm:text-base"
+                      class="text-xs sm:text-base pb-2"
                       v-for="price in slide.priceE"
                     >
                       {{ price.price }}€
