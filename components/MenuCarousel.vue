@@ -11,50 +11,76 @@
         :clickable="false"
         :border="0"
         :width="600"
-        :height="882"
+        :height="840"
       >
         <slide v-for="(slide, i) in slide" :index="i" :key="i">
           <template slot-scope="{ index, isCurrent, leftIndex, rightIndex }">
             <div class="bg-black w-full h-full">
-              <img class="h-1/3" :src="require(`~/assets/img${slide.src}`)" />
-              <div class="flex flex-col gap-4">
+              <div class="relative h-1/5 w-full">
                 <div
-                  class="text-xl font-bold text-center py-4 sm:py-4 border-b-2"
+                  class="
+                    absolute
+                    inset-0
+                    text-xl
+                    font-bold
+                    text-center
+                    py-4
+                    sm:py-4
+                    z-20
+                    w-full
+                    h-2/5
+                    bg-gradient-to-b
+                    from-black
+                    via-black
+                  "
                 >
                   {{ slide.title }}
                 </div>
-                <div class="flex flex-row justify-between w-full px-6">
-                  <div class="flex flex-col w-full">
-                    <div class="flex flex-col">
-                      <div
-                        class="text-sm sm:text-base font-bold flex-col"
-                        v-for="name in slide.items"
-                      >
-                        {{ name.item }}
-                      </div>
+                <img
+                  class="absolute inset-0 h-full w-full object-cover z-0"
+                  :src="require(`~/assets/img${slide.src}`)"
+                />
+              </div>
+              <div
+                class="
+                  flex flex-row
+                  justify-between
+                  w-full
+                  pt-6
+                  px-6
+                  border-t-2
+                "
+              >
+                <div class="flex flex-col w-full">
+                  <div class="flex flex-col">
+                    <div
+                      class="text-sm sm:text-base font-bold flex-col"
+                      v-for="name in slide.items"
+                    >
+                      {{ name.item }}
                     </div>
                   </div>
-                  <div class="flex flex-row">
-                    <div class="flex flex-col px-2">
-                      <div class="text-sm sm:text-base" v-for="kg in slide.kg">
-                        {{ kg.kg }}
-                      </div>
+                </div>
+                <div class="flex flex-row">
+                  <div class="flex flex-col px-2">
+                    <div class="text-sm sm:text-base" v-for="kg in slide.kg">
+                      {{ kg.kg }}
                     </div>
-                    <div class="flex flex-col">
-                      <div
-                        class="text-sm sm:text-base"
-                        v-for="price in slide.priceHR"
-                      >
-                        {{ price.price }}Kn
-                      </div>
+                  </div>
+                  <div class="flex flex-col">
+                    <div
+                      class="text-sm sm:text-base"
+                      v-for="price in slide.priceHR"
+                    >
+                      {{ price.price }}Kn
                     </div>
-                    <div class="flex flex-col px-2">
-                      <div
-                        class="text-sm sm:text-base"
-                        v-for="price in slide.priceE"
-                      >
-                        {{ price.price }}€
-                      </div>
+                  </div>
+                  <div class="flex flex-col px-2">
+                    <div
+                      class="text-sm sm:text-base"
+                      v-for="price in slide.priceE"
+                    >
+                      {{ price.price }}€
                     </div>
                   </div>
                 </div>
