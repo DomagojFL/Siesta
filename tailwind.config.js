@@ -7,10 +7,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        hero: "url('/hero.jpg')",
-      },
-      backgroundGradientTop: {
-        "gradient-top": "linear-gradient(transparent, #9198e5);",
+        menu: "url('/menu-logo.jpg')",
       },
     },
   },

@@ -15,12 +15,7 @@
         "kg":[
         {"kg": "1kg"},
         {"kg": "1kg"},
-        {"kg": "0.35kg"},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""}
+        {"kg": "0.35kg"}
         ],
         "priceHR":[
         {"price": 300},
@@ -55,16 +50,7 @@
         {"item": "Salata od hobotnice"},
         {"item": "Mazalice"}
     ],
-    "kg":[
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""}
-    ],
+    "kg":[],
     "priceHR":[
         {"price": 25},
         {"price": 32},
@@ -101,16 +87,7 @@
         {"item": "Gamberi"},
         {"item": "Siesta"}
     ],
-    "kg":[
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""}
-    ],
+    "kg":[],
     "priceHR":[
         {"price": 38},
         {"price": 40},
@@ -158,16 +135,7 @@
         {"item": "Mesna plata za 2 osobe"},
         {"item": "Mesa plata DELUXE za 2 osobe"}
     ],
-    "kg":[
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""}
-    ],
+    "kg":[],
     "priceHR":[
         {"price": 48},
         {"price": 55},
@@ -205,26 +173,24 @@
     "items":[ 
         {"item": "Riba I. klasa"},
         {"item": "Riba II. klasa"},
-        {"item": "Tuna žar"},
-        {"item": "Lignje pržene"},
         {"item": "Lignje sa žara"},
-        {"item": "Škampi sa žara"}
+        {"item": "Škampi sa žara"},
+        {"item": "Tuna žar"},
+        {"item": "Lignje pržene"}
     ],
     "kg":[
         {"kg": "1kg"},
         {"kg": "1kg"},
-        {"kg": ""},
-        {"kg": ""},
         {"kg": "1kg"},
         {"kg": "1kg"}
     ],
     "priceHR":[
         {"price": 300},
         {"price": 200},
-        {"price": 84},
-        {"price": 75},
         {"price": 290},
-        {"price": 300}
+        {"price": 300},
+        {"price": 84},
+        {"price": 75}
     ],
     "priceE":[
         {"price":39.73},
@@ -243,14 +209,7 @@
         {"item": "Zelena pašta sa škampima"},
         {"item": "Rižoto plodovi mora"}
     ],
-    "kg":[
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""},
-        {"kg": ""}
-    ],
+    "kg":[],
     "priceHR":[
         {"price": 55},
         {"price": 90},
@@ -278,9 +237,7 @@
         {"item": "Piletina-sir"},
         {"item": "Double burger + crispers fries"}
     ],
-    "kg":[
-        {"kg": ""}
-    ],
+    "kg":[],
     "priceHR":[
         {"price": 23},
         {"price": 25},
@@ -323,9 +280,7 @@
         {"item": "Palačinka M&M"},
         {"item": "Palačinka Bueno"}
     ],
-    "kg":[
-        {"kg": ""}
-    ],
+    "kg":[],
     "priceHR":[
         {"price": 8},
         {"price": 15},

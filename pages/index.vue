@@ -321,18 +321,13 @@ export default {
 <style>
 ::-webkit-scrollbar {
   width: 10px;
+  background-color: #000000;
 }
-
-::-webkit-scrollbar-track {
-  background: balck;
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-}
-
 ::-webkit-scrollbar-thumb {
-  background: #fbbf24;
+  background-color: #fbbf24;
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #be911c;
 }

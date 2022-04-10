@@ -15,23 +15,28 @@
       >
         <slide v-for="(slide, i) in slide" :index="i" :key="i">
           <template slot-scope="{ index, isCurrent, leftIndex, rightIndex }">
-            <div class="bg-black w-full h-full">
+            <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
               <div class="relative h-1/3 w-full">
                 <div
                   class="
                     absolute
-                    inset-0
+                    left-0
+                    bottom-0
                     text-xl
                     font-bold
-                    text-center
+                    flex
+                    items-center
+                    justify-center
+                    border-b-2
                     py-4
                     sm:py-4
                     z-20
                     w-full
                     h-2/5
                     bg-gradient-to-b
-                    from-black
+                    from-transparent
                     via-black
+                    to-black
                   "
                 >
                   {{ slide.title }}
@@ -48,7 +53,7 @@
                   w-full
                   pt-6
                   px-6
-                  border-t-2
+                  bg-transparent
                 "
               >
                 <div class="flex flex-col w-full">
