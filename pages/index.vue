@@ -140,7 +140,7 @@
               dječje rođendane. Svaki event i događaj možemo pretvoriti u bajku
               i usrećiti sve one koji sudjeluju u njemu. Naša najveća prednost
               je što smo na predivnom mjestu koje pruža prekrasan pogled na
-              Velebit i prelijepi pogled na more. Manje od sata vremena od Zadra
+              Velebit i prelijepi pogled na more. Manje od sat vremena od Zadra
               i više od 15 minuta od predivne rijeke Zrmanje . Od jutarnjih kava
               uz pogled na more do posebnih ljetnih večeri uz miris mora i fine
               hrane u restoranu Grill & Bar Siesta.
