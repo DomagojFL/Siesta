@@ -97,7 +97,7 @@
             :width="600"
             :height="820"
           >
-            <slide :index="0">
+            <slide class="bg-black" :index="0">
               <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
                 <div class="relative h-1/3 w-full">
                   <div
@@ -143,7 +143,7 @@
                 </div>
               </div>
             </slide>
-            <slide :index="1">
+            <slide class="bg-black" :index="1">
               <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
                 <div class="relative h-1/3 w-full">
                   <div
@@ -186,7 +186,7 @@
                 </div>
               </div>
             </slide>
-            <slide :index="2">
+            <slide class="bg-black" :index="2">
               <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
                 <div class="relative h-1/3 w-full">
                   <div
@@ -200,7 +200,7 @@
                 </div>
                 <div
                   class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
-                  v-for="item in hladnapredjelas"
+                  v-for="item in pizzas"
                 >
                   <div class="flex flex-col w-full">
                     <div class="flex flex-col">
@@ -229,7 +229,7 @@
                 </div>
               </div>
             </slide>
-            <slide :index="3">
+            <slide class="bg-black" :index="3">
               <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
                 <div class="relative h-1/3 w-full">
                   <div
@@ -243,7 +243,7 @@
                 </div>
                 <div
                   class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
-                  v-for="item in hladnapredjelas"
+                  v-for="item in mesnajelas"
                 >
                   <div class="flex flex-col w-full">
                     <div class="flex flex-col">
@@ -272,7 +272,7 @@
                 </div>
               </div>
             </slide>
-            <slide :index="4">
+            <slide class="bg-black" :index="4">
               <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
                 <div class="relative h-1/3 w-full">
                   <div
@@ -286,7 +286,7 @@
                 </div>
                 <div
                   class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
-                  v-for="item in hladnapredjelas"
+                  v-for="item in ribljajelas"
                 >
                   <div class="flex flex-col w-full">
                     <div class="flex flex-col">
@@ -315,7 +315,7 @@
                 </div>
               </div>
             </slide>
-            <slide :index="5">
+            <slide class="bg-black" :index="5">
               <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
                 <div class="relative h-1/3 w-full">
                   <div
@@ -329,7 +329,7 @@
                 </div>
                 <div
                   class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
-                  v-for="item in hladnapredjelas"
+                  v-for="item in pasterizotas"
                 >
                   <div class="flex flex-col w-full">
                     <div class="flex flex-col">
@@ -358,7 +358,7 @@
                 </div>
               </div>
             </slide>
-            <slide :index="6">
+            <slide class="bg-black" :index="6">
               <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
                 <div class="relative h-1/3 w-full">
                   <div
@@ -372,7 +372,7 @@
                 </div>
                 <div
                   class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
-                  v-for="item in hladnapredjelas"
+                  v-for="item in deserts"
                 >
                   <div class="flex flex-col w-full">
                     <div class="flex flex-col">
@@ -546,6 +546,11 @@ export default {
       scY: 0,
       hladnapredjelas: [],
       toplapredjelas: [],
+      mesnajelas: [],
+      pizzas: [],
+      ribljajelas: [],
+      pasterizotas: [],
+      deserts: [],
       error: null,
     };
   },
@@ -602,6 +607,81 @@ export default {
         populate: ["kategorija"],
       });
       this.toplapredjelas = responseTopla.data;
+    } catch (error) {
+      this.error = error;
+    }
+    try {
+      const responsePizzas = await this.$strapi.find("jelovniks", {
+        filters: {
+          kategorija: {
+            ime: {
+              $eq: "Pizza",
+            },
+          },
+        },
+        populate: ["kategorija"],
+      });
+      this.pizzas = responsePizzas.data;
+    } catch (error) {
+      this.error = error;
+    }
+    try {
+      const responseMesna = await this.$strapi.find("jelovniks", {
+        filters: {
+          kategorija: {
+            ime: {
+              $eq: "Mesna jela",
+            },
+          },
+        },
+        populate: ["kategorija"],
+      });
+      this.mesnajelas = responseMesna.data;
+    } catch (error) {
+      this.error = error;
+    }
+    try {
+      const responseRiblja = await this.$strapi.find("jelovniks", {
+        filters: {
+          kategorija: {
+            ime: {
+              $eq: "Riblja jela",
+            },
+          },
+        },
+        populate: ["kategorija"],
+      });
+      this.ribljajelas = responseRiblja.data;
+    } catch (error) {
+      this.error = error;
+    }
+    try {
+      const responsePaste = await this.$strapi.find("jelovniks", {
+        filters: {
+          kategorija: {
+            ime: {
+              $eq: "Pašte i rižoti",
+            },
+          },
+        },
+        populate: ["kategorija"],
+      });
+      this.pasterizotas = responsePaste.data;
+    } catch (error) {
+      this.error = error;
+    }
+    try {
+      const responseDesert = await this.$strapi.find("jelovniks", {
+        filters: {
+          kategorija: {
+            ime: {
+              $eq: "Deserti",
+            },
+          },
+        },
+        populate: ["kategorija"],
+      });
+      this.deserts = responseDesert.data;
     } catch (error) {
       this.error = error;
     }
