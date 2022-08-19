@@ -13,27 +13,10 @@
           Your browser does not support the video tag.
         </video>
         <div
-          class="
-            absolute
-            z-20
-            bg-black
-            w-full
-            h-screen
-            flex
-            items-center
-            justify-center
-            bg-opacity-70
-          "
+          class="absolute z-20 bg-black w-full h-screen flex items-center justify-center bg-opacity-70"
         >
           <div
-            class="
-              title
-              flex flex-col
-              items-center
-              justify-center
-              absolute
-              top-60
-            "
+            class="title flex flex-col items-center justify-center absolute top-60"
           >
             <div class="flex flex-col text-center">
               <div data-aos="fade-up" class="text-4xl sm:text-6xl font-bold">
@@ -63,16 +46,7 @@
               <div data-aos="fade-up">
                 <a href="tel:091 304 5555">
                   <svg
-                    class="
-                      w-12
-                      scale-100
-                      transform
-                      hover:scale-110
-                      transition-all
-                      ease-in-out
-                      duration-200
-                      text-yellow-400
-                    "
+                    class="w-12 scale-100 transform hover:scale-110 transition-all ease-in-out duration-200 text-yellow-400"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -85,16 +59,7 @@
               <div data-aos="fade-up">
                 <a href="https://goo.gl/maps/9iZmcWbRpbWWygvE6">
                   <svg
-                    class="
-                      w-12
-                      scale-100
-                      transform
-                      hover:scale-110
-                      transition-all
-                      ease-in-out
-                      duration-200
-                      text-yellow-400
-                    "
+                    class="w-12 scale-100 transform hover:scale-110 transition-all ease-in-out duration-200 text-yellow-400"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -118,7 +83,327 @@
       >
         Jelovnik
       </div>
-      <MenuCarousel />
+      <div>
+        <client-only placeholder="Loading...">
+          <carousel-3d
+            data-aos="fade-up"
+            :controls-visible="true"
+            :controls-prev-html="'&#10092; '"
+            :controls-next-html="'&#10093;'"
+            :controls-width="15"
+            :controls-height="60"
+            :clickable="false"
+            :border="0"
+            :width="600"
+            :height="820"
+          >
+            <slide :index="0">
+              <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
+                <div class="relative h-1/3 w-full">
+                  <div
+                    class="absolute left-0 bottom-0 text-xl font-bold flex items-center justify-center border-b-2 py-4 sm:py-4 z-20 w-full h-2/5 bg-gradient-to-b from-transparent via-black to-black"
+                  >
+                    Hladna predjela
+                  </div>
+                  <img
+                    class="absolute inset-0 h-full w-full object-cover z-0"
+                  />
+                </div>
+                <div
+                  class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
+                  v-for="item in hladnapredjelas"
+                >
+                  <div class="flex flex-col w-full">
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base font-bold flex-col pb-2">
+                        {{ item.attributes.ime }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-row">
+                    <div class="flex flex-col px-2">
+                      <div
+                        v-if="item.attributes.kolicina"
+                        class="text-xs sm:text-base pb-2"
+                      >
+                        {{ item.attributes.kolicina }}Kg
+                      </div>
+                    </div>
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.kuna }}Kn
+                      </div>
+                    </div>
+                    <div class="flex flex-col pl-2">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.euro }}€
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </slide>
+            <slide :index="1">
+              <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
+                <div class="relative h-1/3 w-full">
+                  <div
+                    class="absolute left-0 bottom-0 text-xl font-bold flex items-center justify-center border-b-2 py-4 sm:py-4 z-20 w-full h-2/5 bg-gradient-to-b from-transparent via-black to-black"
+                  >
+                    Topla predjela
+                  </div>
+                  <img
+                    class="absolute inset-0 h-full w-full object-cover z-0"
+                  />
+                </div>
+                <div
+                  class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
+                  v-for="item in toplapredjelas"
+                >
+                  <div class="flex flex-col w-full">
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base font-bold flex-col pb-2">
+                        {{ item.attributes.ime }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-row">
+                    <div class="flex flex-col px-2">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.kolicina }}Kg
+                      </div>
+                    </div>
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.kuna }}Kn
+                      </div>
+                    </div>
+                    <div class="flex flex-col pl-2">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.euro }}€
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </slide>
+            <slide :index="2">
+              <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
+                <div class="relative h-1/3 w-full">
+                  <div
+                    class="absolute left-0 bottom-0 text-xl font-bold flex items-center justify-center border-b-2 py-4 sm:py-4 z-20 w-full h-2/5 bg-gradient-to-b from-transparent via-black to-black"
+                  >
+                    Pizza
+                  </div>
+                  <img
+                    class="absolute inset-0 h-full w-full object-cover z-0"
+                  />
+                </div>
+                <div
+                  class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
+                  v-for="item in hladnapredjelas"
+                >
+                  <div class="flex flex-col w-full">
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base font-bold flex-col pb-2">
+                        {{ item.attributes.ime }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-row">
+                    <div class="flex flex-col px-2">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.kolicina }}Kg
+                      </div>
+                    </div>
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.kuna }}Kn
+                      </div>
+                    </div>
+                    <div class="flex flex-col pl-2">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.euro }}€
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </slide>
+            <slide :index="3">
+              <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
+                <div class="relative h-1/3 w-full">
+                  <div
+                    class="absolute left-0 bottom-0 text-xl font-bold flex items-center justify-center border-b-2 py-4 sm:py-4 z-20 w-full h-2/5 bg-gradient-to-b from-transparent via-black to-black"
+                  >
+                    Mesna jela
+                  </div>
+                  <img
+                    class="absolute inset-0 h-full w-full object-cover z-0"
+                  />
+                </div>
+                <div
+                  class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
+                  v-for="item in hladnapredjelas"
+                >
+                  <div class="flex flex-col w-full">
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base font-bold flex-col pb-2">
+                        {{ item.attributes.ime }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-row">
+                    <div class="flex flex-col px-2">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.kolicina }}Kg
+                      </div>
+                    </div>
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.kuna }}Kn
+                      </div>
+                    </div>
+                    <div class="flex flex-col pl-2">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.euro }}€
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </slide>
+            <slide :index="4">
+              <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
+                <div class="relative h-1/3 w-full">
+                  <div
+                    class="absolute left-0 bottom-0 text-xl font-bold flex items-center justify-center border-b-2 py-4 sm:py-4 z-20 w-full h-2/5 bg-gradient-to-b from-transparent via-black to-black"
+                  >
+                    Riblja jela
+                  </div>
+                  <img
+                    class="absolute inset-0 h-full w-full object-cover z-0"
+                  />
+                </div>
+                <div
+                  class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
+                  v-for="item in hladnapredjelas"
+                >
+                  <div class="flex flex-col w-full">
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base font-bold flex-col pb-2">
+                        {{ item.attributes.ime }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-row">
+                    <div class="flex flex-col px-2">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.kolicina }}Kg
+                      </div>
+                    </div>
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.kuna }}Kn
+                      </div>
+                    </div>
+                    <div class="flex flex-col pl-2">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.euro }}€
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </slide>
+            <slide :index="5">
+              <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
+                <div class="relative h-1/3 w-full">
+                  <div
+                    class="absolute left-0 bottom-0 text-xl font-bold flex items-center justify-center border-b-2 py-4 sm:py-4 z-20 w-full h-2/5 bg-gradient-to-b from-transparent via-black to-black"
+                  >
+                    Pašte i rižoti
+                  </div>
+                  <img
+                    class="absolute inset-0 h-full w-full object-cover z-0"
+                  />
+                </div>
+                <div
+                  class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
+                  v-for="item in hladnapredjelas"
+                >
+                  <div class="flex flex-col w-full">
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base font-bold flex-col pb-2">
+                        {{ item.attributes.ime }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-row">
+                    <div class="flex flex-col px-2">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.kolicina }}Kg
+                      </div>
+                    </div>
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.kuna }}Kn
+                      </div>
+                    </div>
+                    <div class="flex flex-col pl-2">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.euro }}€
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </slide>
+            <slide :index="6">
+              <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
+                <div class="relative h-1/3 w-full">
+                  <div
+                    class="absolute left-0 bottom-0 text-xl font-bold flex items-center justify-center border-b-2 py-4 sm:py-4 z-20 w-full h-2/5 bg-gradient-to-b from-transparent via-black to-black"
+                  >
+                    Deserti
+                  </div>
+                  <img
+                    class="absolute inset-0 h-full w-full object-cover z-0"
+                  />
+                </div>
+                <div
+                  class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
+                  v-for="item in hladnapredjelas"
+                >
+                  <div class="flex flex-col w-full">
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base font-bold flex-col pb-2">
+                        {{ item.attributes.ime }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-row">
+                    <div class="flex flex-col px-2">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.kolicina }}Kg
+                      </div>
+                    </div>
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.kuna }}Kn
+                      </div>
+                    </div>
+                    <div class="flex flex-col pl-2">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.euro }}€
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </slide>
+          </carousel-3d>
+        </client-only>
+      </div>
     </div>
     <div id="events" class="w-full h-full text-center px-5 py-4">
       <div data-aos="fade-up" class="text-3xl font-bold py-8">Događaji</div>
@@ -156,22 +441,7 @@
             <button
               data-aos="fade-up"
               data-aos-delay="50"
-              class="
-                mt-4
-                bg-yellow-400
-                text-black
-                transform
-                scale-100
-                hover:scale-110
-                transition-all
-                duration-200
-                ease-in-out
-                py-4
-                px-4
-                rounded-xl
-                focus:outline-none
-                font-bold
-              "
+              class="mt-4 bg-yellow-400 text-black transform scale-100 hover:scale-110 transition-all duration-200 ease-in-out py-4 px-4 rounded-xl focus:outline-none font-bold"
             >
               Organiziraj
             </button>
@@ -222,16 +492,7 @@
     <transition name="fade">
       <div
         id="pagetop"
-        class="
-          fixed
-          right-0
-          bottom-0
-          p-2
-          m-2
-          bg-yellow-400 bg-opacity-60
-          rounded-full
-          shadow-xl
-        "
+        class="fixed right-0 bottom-0 p-2 m-2 bg-yellow-400 bg-opacity-60 rounded-full shadow-xl"
         v-show="scY > 300"
         @click="toTop"
       >
@@ -253,17 +514,7 @@
     <transition name="fade">
       <div
         id="pagetop"
-        class="
-          sm:hidden
-          fixed
-          left-0
-          bottom-0
-          p-2
-          m-2
-          bg-yellow-400 bg-opacity-60
-          rounded-full
-          shadow-xl
-        "
+        class="sm:hidden fixed left-0 bottom-0 p-2 m-2 bg-yellow-400 bg-opacity-60 rounded-full shadow-xl"
         v-show="scY > 300"
       >
         <a href="tel:091 304 5555">
@@ -293,9 +544,17 @@ export default {
     return {
       scTimer: 0,
       scY: 0,
+      hladnapredjelas: [],
+      toplapredjelas: [],
+      error: null,
     };
   },
-
+  components: {
+    Navbar,
+    MenuCarousel,
+    Gallery,
+    Footer,
+  },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
   },
@@ -315,7 +574,38 @@ export default {
       });
     },
   },
-  components: { Gallery, Navbar, MenuCarousel, Footer },
+  async mounted() {
+    try {
+      const responseHladna = await this.$strapi.find("jelovniks", {
+        filters: {
+          kategorija: {
+            ime: {
+              $eq: "Hladna predjela",
+            },
+          },
+        },
+        populate: ["kategorija"],
+      });
+      this.hladnapredjelas = responseHladna.data;
+    } catch (error) {
+      this.error = error;
+    }
+    try {
+      const responseTopla = await this.$strapi.find("jelovniks", {
+        filters: {
+          kategorija: {
+            ime: {
+              $eq: "Topla predjela",
+            },
+          },
+        },
+        populate: ["kategorija"],
+      });
+      this.toplapredjelas = responseTopla.data;
+    } catch (error) {
+      this.error = error;
+    }
+  },
 };
 </script>
 <style>
