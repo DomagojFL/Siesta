@@ -168,7 +168,10 @@
                   </div>
                   <div class="flex flex-row">
                     <div class="flex flex-col px-2">
-                      <div class="text-xs sm:text-base pb-2">
+                      <div
+                        v-if="item.attributes.kolicina"
+                        class="text-xs sm:text-base pb-2"
+                      >
                         {{ item.attributes.kolicina }}Kg
                       </div>
                     </div>
@@ -211,7 +214,10 @@
                   </div>
                   <div class="flex flex-row">
                     <div class="flex flex-col px-2">
-                      <div class="text-xs sm:text-base pb-2">
+                      <div
+                        v-if="item.attributes.kolicina"
+                        class="text-xs sm:text-base pb-2"
+                      >
                         {{ item.attributes.kolicina }}Kg
                       </div>
                     </div>
@@ -254,7 +260,10 @@
                   </div>
                   <div class="flex flex-row">
                     <div class="flex flex-col px-2">
-                      <div class="text-xs sm:text-base pb-2">
+                      <div
+                        v-if="item.attributes.kolicina"
+                        class="text-xs sm:text-base pb-2"
+                      >
                         {{ item.attributes.kolicina }}Kg
                       </div>
                     </div>
@@ -297,7 +306,10 @@
                   </div>
                   <div class="flex flex-row">
                     <div class="flex flex-col px-2">
-                      <div class="text-xs sm:text-base pb-2">
+                      <div
+                        v-if="item.attributes.kolicina"
+                        class="text-xs sm:text-base pb-2"
+                      >
                         {{ item.attributes.kolicina }}Kg
                       </div>
                     </div>
@@ -340,7 +352,10 @@
                   </div>
                   <div class="flex flex-row">
                     <div class="flex flex-col px-2">
-                      <div class="text-xs sm:text-base pb-2">
+                      <div
+                        v-if="item.attributes.kolicina"
+                        class="text-xs sm:text-base pb-2"
+                      >
                         {{ item.attributes.kolicina }}Kg
                       </div>
                     </div>
@@ -383,7 +398,10 @@
                   </div>
                   <div class="flex flex-row">
                     <div class="flex flex-col px-2">
-                      <div class="text-xs sm:text-base pb-2">
+                      <div
+                        v-if="item.attributes.kolicina"
+                        class="text-xs sm:text-base pb-2"
+                      >
                         {{ item.attributes.kolicina }}Kg
                       </div>
                     </div>
@@ -700,5 +718,8 @@ export default {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #be911c;
+}
+.carousel-3d-slide {
+  background-color: #000 !important;
 }
 </style>
