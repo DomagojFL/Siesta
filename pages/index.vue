@@ -99,7 +99,7 @@
           >
             <slide class="bg-black" :index="0">
               <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
-                <div class="relative h-1/3 w-full">
+                <div class="relative h-1/4 w-full">
                   <div
                     class="absolute left-0 bottom-0 text-xl font-bold flex items-center justify-center border-b-2 py-4 sm:py-4 z-20 w-full h-2/5 bg-gradient-to-b from-transparent via-black to-black"
                   >
@@ -110,7 +110,7 @@
                   />
                 </div>
                 <div
-                  class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
+                  class="flex flex-row justify-between w-full pt-2 px-6 bg-transparent"
                   v-for="item in hladnapredjelas"
                 >
                   <div class="flex flex-col w-full">
@@ -145,18 +145,18 @@
             </slide>
             <slide class="bg-black" :index="1">
               <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
-                <div class="relative h-1/3 w-full">
+                <div class="relative h-1/4 w-full">
                   <div
                     class="absolute left-0 bottom-0 text-xl font-bold flex items-center justify-center border-b-2 py-4 sm:py-4 z-20 w-full h-2/5 bg-gradient-to-b from-transparent via-black to-black"
                   >
-                    Topla predjela
+                    Juhe
                   </div>
                   <img
                     class="absolute inset-0 h-full w-full object-cover z-0"
                   />
                 </div>
                 <div
-                  class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
+                  class="flex flex-row justify-between w-full pt-2 px-6 bg-transparent"
                   v-for="item in toplapredjelas"
                 >
                   <div class="flex flex-col w-full">
@@ -190,8 +190,10 @@
               </div>
             </slide>
             <slide class="bg-black" :index="2">
-              <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
-                <div class="relative h-1/3 w-full">
+              <div
+                class="bg-menu bg-contain bg-no-repeat w-full h-full overflow-y-auto"
+              >
+                <div class="relative h-1/4 w-full">
                   <div
                     class="absolute left-0 bottom-0 text-xl font-bold flex items-center justify-center border-b-2 py-4 sm:py-4 z-20 w-full h-2/5 bg-gradient-to-b from-transparent via-black to-black"
                   >
@@ -202,7 +204,7 @@
                   />
                 </div>
                 <div
-                  class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
+                  class="flex flex-row justify-between w-full pt-2 px-6 bg-transparent"
                   v-for="item in pizzas"
                 >
                   <div class="flex flex-col w-full">
@@ -237,7 +239,7 @@
             </slide>
             <slide class="bg-black" :index="3">
               <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
-                <div class="relative h-1/3 w-full">
+                <div class="relative h-1/4 w-full">
                   <div
                     class="absolute left-0 bottom-0 text-xl font-bold flex items-center justify-center border-b-2 py-4 sm:py-4 z-20 w-full h-2/5 bg-gradient-to-b from-transparent via-black to-black"
                   >
@@ -248,12 +250,12 @@
                   />
                 </div>
                 <div
-                  class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
+                  class="flex flex-row justify-between w-full pt-2 px-6 bg-transparent"
                   v-for="item in mesnajelas"
                 >
                   <div class="flex flex-col w-full">
                     <div class="flex flex-col">
-                      <div class="text-xs sm:text-base font-bold flex-col pb-2">
+                      <div class="text-xs sm:text-base font-bold flex-col">
                         {{ item.attributes.ime }}
                       </div>
                     </div>
@@ -283,7 +285,7 @@
             </slide>
             <slide class="bg-black" :index="4">
               <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
-                <div class="relative h-1/3 w-full">
+                <div class="relative h-1/4 w-full">
                   <div
                     class="absolute left-0 bottom-0 text-xl font-bold flex items-center justify-center border-b-2 py-4 sm:py-4 z-20 w-full h-2/5 bg-gradient-to-b from-transparent via-black to-black"
                   >
@@ -294,7 +296,7 @@
                   />
                 </div>
                 <div
-                  class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
+                  class="flex flex-row justify-between w-full pt-2 px-6 bg-transparent"
                   v-for="item in ribljajelas"
                 >
                   <div class="flex flex-col w-full">
@@ -329,7 +331,7 @@
             </slide>
             <slide class="bg-black" :index="5">
               <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
-                <div class="relative h-1/3 w-full">
+                <div class="relative h-1/4 w-full">
                   <div
                     class="absolute left-0 bottom-0 text-xl font-bold flex items-center justify-center border-b-2 py-4 sm:py-4 z-20 w-full h-2/5 bg-gradient-to-b from-transparent via-black to-black"
                   >
@@ -340,7 +342,7 @@
                   />
                 </div>
                 <div
-                  class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
+                  class="flex flex-row justify-between w-full pt-2 px-6 bg-transparent"
                   v-for="item in pasterizotas"
                 >
                   <div class="flex flex-col w-full">
@@ -375,18 +377,110 @@
             </slide>
             <slide class="bg-black" :index="6">
               <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
-                <div class="relative h-1/3 w-full">
+                <div class="relative h-1/4 w-full">
                   <div
                     class="absolute left-0 bottom-0 text-xl font-bold flex items-center justify-center border-b-2 py-4 sm:py-4 z-20 w-full h-2/5 bg-gradient-to-b from-transparent via-black to-black"
                   >
-                    Deserti
+                    Salate
                   </div>
                   <img
                     class="absolute inset-0 h-full w-full object-cover z-0"
                   />
                 </div>
                 <div
-                  class="flex flex-row justify-between w-full pt-6 px-6 bg-transparent"
+                  class="flex flex-row justify-between w-full pt-2 px-6 bg-transparent"
+                  v-for="item in salate"
+                >
+                  <div class="flex flex-col w-full">
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base font-bold flex-col pb-2">
+                        {{ item.attributes.ime }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-row">
+                    <div class="flex flex-col px-2">
+                      <div
+                        v-if="item.attributes.kolicina"
+                        class="text-xs sm:text-base pb-2"
+                      >
+                        {{ item.attributes.kolicina }}Kg
+                      </div>
+                    </div>
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.kuna }}Kn
+                      </div>
+                    </div>
+                    <div class="flex flex-col pl-2">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.euro }}€
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </slide>
+            <slide class="bg-black" :index="7">
+              <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
+                <div class="relative h-1/4 w-full">
+                  <div
+                    class="absolute left-0 bottom-0 text-xl font-bold flex items-center justify-center border-b-2 py-4 sm:py-4 z-20 w-full h-2/5 bg-gradient-to-b from-transparent via-black to-black"
+                  >
+                    Prilozi
+                  </div>
+                  <img
+                    class="absolute inset-0 h-full w-full object-cover z-0"
+                  />
+                </div>
+                <div
+                  class="flex flex-row justify-between w-full pt-2 px-6 bg-transparent"
+                  v-for="item in prilozi"
+                >
+                  <div class="flex flex-col w-full">
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base font-bold flex-col pb-2">
+                        {{ item.attributes.ime }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-row">
+                    <div class="flex flex-col px-2">
+                      <div
+                        v-if="item.attributes.kolicina"
+                        class="text-xs sm:text-base pb-2"
+                      >
+                        {{ item.attributes.kolicina }}Kg
+                      </div>
+                    </div>
+                    <div class="flex flex-col">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.kuna }}Kn
+                      </div>
+                    </div>
+                    <div class="flex flex-col pl-2">
+                      <div class="text-xs sm:text-base pb-2">
+                        {{ item.attributes.euro }}€
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </slide>
+            <slide class="bg-black" :index="8">
+              <div class="bg-menu bg-contain bg-no-repeat w-full h-full">
+                <div class="relative h-1/4 w-full">
+                  <div
+                    class="absolute left-0 bottom-0 text-xl font-bold flex items-center justify-center border-b-2 py-4 sm:py-4 z-20 w-full h-2/5 bg-gradient-to-b from-transparent via-black to-black"
+                  >
+                    Palačinke
+                  </div>
+                  <img
+                    class="absolute inset-0 h-full w-full object-cover z-0"
+                  />
+                </div>
+                <div
+                  class="flex flex-row justify-between w-full pt-2 px-6 bg-transparent"
                   v-for="item in deserts"
                 >
                   <div class="flex flex-col w-full">
@@ -569,6 +663,8 @@ export default {
       ribljajelas: [],
       pasterizotas: [],
       deserts: [],
+      salate: [],
+      prilozi: [],
       error: null,
     };
   },
@@ -618,7 +714,7 @@ export default {
         filters: {
           kategorija: {
             ime: {
-              $eq: "Topla predjela",
+              $eq: "Juhe",
             },
           },
         },
@@ -693,13 +789,43 @@ export default {
         filters: {
           kategorija: {
             ime: {
-              $eq: "Deserti",
+              $eq: "Palačinke",
             },
           },
         },
         populate: ["kategorija"],
       });
       this.deserts = responseDesert.data;
+    } catch (error) {
+      this.error = error;
+    }
+    try {
+      const responsePrilozi = await this.$strapi.find("jelovniks", {
+        filters: {
+          kategorija: {
+            ime: {
+              $eq: "Prilozi",
+            },
+          },
+        },
+        populate: ["kategorija"],
+      });
+      this.prilozi = responsePrilozi.data;
+    } catch (error) {
+      this.error = error;
+    }
+    try {
+      const responseSalate = await this.$strapi.find("jelovniks", {
+        filters: {
+          kategorija: {
+            ime: {
+              $eq: "Salate",
+            },
+          },
+        },
+        populate: ["kategorija"],
+      });
+      this.salate = responseSalate.data;
     } catch (error) {
       this.error = error;
     }

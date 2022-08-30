@@ -1,4 +1,8 @@
 export default {
+  server: {
+    port: 8000, // default: 3000
+    host: "0.0.0.0", // default: localhost
+  },
   ssr: false,
   target: "static",
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -57,5 +61,4 @@ export default {
   build: {
     transpile: ["vue-agile"],
   },
-  //GSAP
 };
