@@ -605,7 +605,7 @@
       <div
         id="pagetop"
         class="fixed right-0 bottom-0 p-2 m-2 bg-yellow-400 bg-opacity-60 rounded-full shadow-xl"
-        v-show="scY > 300"
+        v-show="scY > 450"
         @click="toTop"
       >
         <svg
@@ -627,7 +627,7 @@
       <div
         id="pagetop"
         class="sm:hidden fixed left-0 bottom-0 p-2 m-2 bg-yellow-400 bg-opacity-60 rounded-full shadow-xl"
-        v-show="scY > 300"
+        v-show="scY > 450"
       >
         <a href="tel:091 304 5555">
           <svg
@@ -674,9 +674,7 @@ export default {
     Gallery,
     Footer,
   },
-  mounted() {
-    window.addEventListener("scroll", this.handleScroll);
-  },
+
   methods: {
     handleScroll: function () {
       if (this.scTimer) return;
@@ -694,6 +692,7 @@ export default {
     },
   },
   async mounted() {
+    window.addEventListener("scroll", this.handleScroll);
     try {
       const responseHladna = await this.$strapi.find("jelovniks", {
         filters: {
