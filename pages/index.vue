@@ -578,7 +578,7 @@
             Organiziraj svoj događaj
           </div>
           <div data-aos="fade-up" data-aos-delay="50" class="sm:text-lg">
-            <p class="sm:px-6 text-left">
+            <p class="sm:px-6 text-center sm:text-left">
               Možemo organizirati vjenčanja, djevojačke večeri, rođendane,
               dječje rođendane. Svaki event i događaj možemo pretvoriti u bajku
               i usrećiti sve one koji sudjeluju u njemu. Naša najveća prednost
