@@ -14,12 +14,23 @@ export default {
   head: {
     title: "Grill & Bar Siesta",
     htmlAttrs: {
-      lang: "en",
+      lang: "hr",
     },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content:
+          "Službena stranica Grill & Bar Sieste, mi smo restoran koji se nalazi manje od sat vremena od Zadra i više od 15 minuta od predivne rijeke Zrmanje . Od jutarnjih kava uz pogled na more do posebnih ljetnih večeri uz miris mora i fine hrane u restoranu Grill & Bar Siesta.",
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content:
+          "https://res.cloudinary.com/drcapubdj/image/upload/v1661962588/logo_op_yofror.png",
+      },
       { name: "format-detection", content: "telephone=no" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/logo.ico" }],
