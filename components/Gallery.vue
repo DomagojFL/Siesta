@@ -1,6 +1,5 @@
 <template>
-  <div class="w-full h-full text-center mt-10 mb-4">
-    <div data-aos="fade-up" class="text-3xl font-bold py-8">Galerija</div>
+  <div class="w-full h-full text-center mt-20 mb-20">
     <carousel-3d
       data-aos="fade-up"
       :disable3d="true"
@@ -40,5 +39,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
